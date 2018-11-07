@@ -16,6 +16,9 @@ a, a:hover, .btn{
     outline:none!important;
     text-decoration: none;
 }
+#tags
+	{ border: 2px solid black;
+	}
 .btn{
 	border-radius: 0;
 }
@@ -306,7 +309,7 @@ a.text-primary:hover,a.text-primary:focus{
     border-radius: 0;
     box-shadow: 0 9px 11px rgba(0, 0, 0, 0.2);
     width: 96%;
-    margin-left:2%; 
+    margin-left:2%;
 }
 .top-nav .mega-menu .card{
 	border:none;
@@ -345,7 +348,7 @@ a.text-primary:hover,a.text-primary:focus{
 }
 .top-nav .dropdown-menu a:hover{
     border-bottom:2px solid #efefef;
-    background-color: #efefef;    
+    background-color: #efefef;
 }
 #search {
 	float: right;
@@ -393,7 +396,7 @@ a.text-primary:hover,a.text-primary:focus{
 }
 .banner-sec .news-block .time-text{
 	float: left;
-    width: 100%;	
+    width: 100%;
     margin-top: 12px;
 }
 
@@ -862,7 +865,7 @@ a.text-primary:hover,a.text-primary:focus{
     margin-bottom: 7px;
 }
 .cat-listing .cat-item .meta-block a{
-    color: #fd6b4e!important;    
+    color: #fd6b4e!important;
 }
 .cat-listing .cat-item .list-inline{
     margin-bottom: 7px;
@@ -883,7 +886,7 @@ a.text-primary:hover,a.text-primary:focus{
     color: #FD6B4E;
 }
 .cat-listing .pagination .page-link:hover, .cat-listing .pagination .page-link:focus{
-    background-color: #FD6B4E;   
+    background-color: #FD6B4E;
     color: #fff;
 }
 .cat-listing .pagination .page-item {
@@ -946,7 +949,7 @@ a.text-primary:hover,a.text-primary:focus{
 	color: #141517;
 }
 .post-side-bar h2{
-	font-size: 16px;	
+	font-size: 16px;
 	margin-top:15px;
 }
 .post-side-bar .tabing-block .title-small{
