@@ -17,9 +17,18 @@
     border-style: solid;
     border-width: 5px;
     border-color: darkgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: yellow;
   }
 h2
   {
     color: #1967D2;
   }
+#closeBtn{
+    color: white;
+}
+
+.modal-content{
+    border:none;
+}

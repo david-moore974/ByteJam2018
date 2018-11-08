@@ -24,6 +24,7 @@
     <link href="../css/lightbox.min.css" rel="stylesheet" />
     <link href="../css/lity.min.css" rel="stylesheet" />
     <link href="../css/template.css" rel="stylesheet"/>
+    <link href="../css/motal.css" rel="stylesheet"/>
   </head>
   <body>
   <!-- Top small banner -->
@@ -35,12 +36,12 @@
           </div>
           <div class="col-lg-3 ml-auto">
             <div class="social-icon">
-              <a href="#" class=" fa fa-facebook"></a>
-              <a href="#" class=" fa fa-twitter"></a>
-              <a href="#" class=" fa fa-google-plus"></a>
-              <a href="#" class=" fa fa-linkedin"></a>
-              <a href="#" class=" fa fa-youtube"></a>
-              <a href="#" class=" fa fa-vimeo-square"></a>
+              <a href="https://www.facebook.com/" class=" fa fa-facebook"></a>
+              <a href="https://twitter.com/" class=" fa fa-twitter"></a>
+              <a href="https://plus.google.com/" class=" fa fa-google-plus"></a>
+              <a href="https://www.linkedin.com/" class=" fa fa-linkedin"></a>
+              <a href="https://www.youtube.com" class=" fa fa-youtube"></a>
+              <a href="https://vimeo.com/" class=" fa fa-vimeo-square"></a>
             </div>
           </div>
         </div>
@@ -54,7 +55,34 @@
           </div>
           <div class="col-md-6 col-lg-5 admin-bar ml-auto mt-2">
             <nav class="nav justify-content-end">
-            <button class="btn btn-info" type="button" name="button">login</button>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content" id = "modalContent">
+                    <div class="modal-header" id = "modalHeader">
+                        <h4 id = "loginH4" class="modal-title">Login</h4>
+                      <button id="closeBtn" type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" id = "modalBody">
+                      <p id = "userNameWord"> Username:</p>
+                      <input type="text" class="form-control" id="usr"> <br>
+                      <p id = "passWordP">Password:</p>
+                      <input type="password" class="form-control" id="pwd">
+
+                    </div>
+                    <div class="modal-footer" id = "modalFooter">
+                      <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </nav>
           </div>
         </div>
@@ -84,6 +112,7 @@
   </section>
 
   <!-- content -->
+<<<<<<< HEAD
     <div class="container-fluid">
         <div class="row">
           <div class="col-sm-3" style="background-color:lavender;">
@@ -123,7 +152,20 @@
             </div>
           </div>
         </div>
+=======
+  <div class="container">
+    <h2>Card Image</h2>
+    <p>Image at the top (card-img-top):</p>
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="https://scontent.fdsm1-1.fna.fbcdn.net/v/t1.0-9/16298762_1012934038840530_3360968111574331366_n.jpg?_nc_cat=107&_nc_ht=scontent.fdsm1-1.fna&oh=8fbf1eecd3b77f2da52d296d1036abdf&oe=5C7A4928" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">David Moore</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+>>>>>>> 6c6c5a7b545af3b6c43e78e7a9f6baac83324d6d
     </div>
+  </div>
 
 
   <!-- Footer Section -->
@@ -146,7 +188,7 @@
     <div class="container-fluid">
       <div class="row px-3">
         <div class="col-lg-6 col-md-4">
-          <p>© 2018 - <a href="http://grafreez.com">Grafreez.com</a></p>
+          <p>© 2018 - <a href="../index.html">Greatest MEME's</a></p>
         </div>
         <div class="col-lg-6 col-md-8">
           <ul class="bottom_ul">
