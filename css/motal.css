@@ -2,12 +2,20 @@
 This is only for the motal login*/
 #loginH4{
   color: #007bff;
+  text-align: left;
   }
 
 #userNameWord{
   color: #007bff;
+  text-align: left;
   }
 
 #passWordP{
   color: #007bff;
+  text-align: left;
   }
+/*
+#modalHeader
+  {
+    float: left;
+  } */
