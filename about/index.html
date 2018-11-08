@@ -24,6 +24,7 @@
     <link href="../css/lightbox.min.css" rel="stylesheet" />
     <link href="../css/lity.min.css" rel="stylesheet" />
     <link href="../css/template.css" rel="stylesheet"/>
+    <link href="../css/motal.css" rel="stylesheet"/>
   </head>
   <body>
   <!-- Top small banner -->
@@ -54,7 +55,34 @@
           </div>
           <div class="col-md-6 col-lg-5 admin-bar ml-auto mt-2">
             <nav class="nav justify-content-end">
-            <button class="btn btn-info" type="button" name="button">login</button>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content" id = "modalContent">
+                    <div class="modal-header" id = "modalHeader">
+                        <h4 id = "loginH4" class="modal-title">Login</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" id = "modalBody">
+                      <p id = "userNameWord"> Username:</p>
+                      <input type="text" class="form-control" id="usr"> <br>
+                      <p id = "passWordP">Password:</p>
+                      <input type="password" class="form-control" id="pwd">
+
+                    </div>
+                    <div class="modal-footer" id = "modalFooter">
+                      <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </nav>
           </div>
         </div>
