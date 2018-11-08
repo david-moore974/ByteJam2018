@@ -11,3 +11,15 @@ This is only for the motal login*/
 #passWordP{
   color: #007bff;
   }
+
+#modalBody{
+    background-color: black;
+}
+
+#modalFooter{
+background-color: black;
+}
+
+#modalHeader{
+background-color: black;
+}
