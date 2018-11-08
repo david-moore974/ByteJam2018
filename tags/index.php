@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+
+
+
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -128,6 +138,26 @@
   </section>
 
   <!-- david's content div section -->
+  <div class="" id="content">
+      <script>
+          $.ajax({
+              type:'POST',
+              url:'getMeme.php',
+              // data:formData,
+              success: function(data){
+                  var data1 = data.split(data, ",")
+                  for(x=0;x<100;x++){
+
+                      document.getElementById('content').innerHTML += "<img width=\"300px\" src=\"" + data1[x] + "\"alt=\"oops...\">";
+                  }
+
+              }
+          });
+      </script>
+  </div>
+
+
+
 
   <!-- Footer Section -->
   <footer>
@@ -165,11 +195,11 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/core.js"></script>
-<script src="js/lightbox-plus-jquery.min.js"></script>
-<script src="js/lity.min.js"></script>
+<script src="../js/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/core.js"></script>
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<script src="../js/lity.min.js"></script>
 </body>
 </html>
