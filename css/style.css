@@ -23,3 +23,10 @@ h2
   {
     color: #1967D2;
   }
+#closeBtn{
+    color: white;
+}
+
+.modal-content{
+    border:none;
+}
