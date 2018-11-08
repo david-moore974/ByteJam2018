@@ -14,8 +14,23 @@ This is only for the motal login*/
   color: #007bff;
   text-align: left;
   }
+<<<<<<< HEAD
 /*
 #modalHeader
   {
     float: left;
   } */
+=======
+
+#modalBody{
+    background-color: black;
+}
+
+#modalFooter{
+background-color: black;
+}
+
+#modalHeader{
+background-color: black;
+}
+>>>>>>> 7d1ee3be1f6b00f5167062718dceed0fda7f96b4
