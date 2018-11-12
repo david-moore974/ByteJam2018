@@ -145,7 +145,6 @@
             <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a> </li>
             <li class="nav-item"> <a class="nav-link" href="../tags/tags.html">Tags</a> </li>
             <li class="nav-item"> <a class="nav-link" href="../about/index.html">About Us</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="../upload/index.php">Upload</a> </li>
           </ul>
           <form class="ml-auto">
           </form>
@@ -203,8 +202,7 @@
         <div class="col-lg-6 col-md-8">
           <ul class="bottom_ul">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../tags/tags.html">Tags</a></li>
-            <li><a href="../upload/index.php">Upload</a></li>
+            <li><a href="../tags/tags.html">Tags</a></li>          
             <li><a href="../about/index.html">About Us</a></li>
           </ul>
         </div>
