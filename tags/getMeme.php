@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html >
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
+<?php
             // $query = $_POST["query"];
 
             $servername = "localhost";
             $username = "admin";
             $password = "admin";
-
             $dbname = "bytejam2018";
 
         // Create connection
@@ -22,17 +14,23 @@
         }
 
         $sql = "SELECT url FROM memes";
+        if (isset($_POST['sql'])) {
+            $sql = $_POST['sql'];
+        }
+
+
+
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
             // output data of each row
-            $data = "{";
+            $data = Array();
             while($row = mysqli_fetch_assoc($result)) {
                 // echo "<img src=" . $row["url"]. " \" alt=\" oops...\" ";
                 // $data .= "\"".$row["url"]."\",";
-                $data .= $row["url"].",";
+                $data[] = $row;
             }
-            $data .= "}";
+
         } else {
             echo "0 results";
         }
@@ -41,7 +39,4 @@
         mysqli_close($conn);
 
 
-         ?>
-
-    </body>
-</html>
+?>

@@ -15,11 +15,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="" />
+    <!-- <script scr="../js/ajax.js"></script> -->
+
+
+    <script>
+    function getMeme(tag){
+
+        $('#content').empty();
+        var formData = new FormData();
+
+        // var sql = "SELECT * FROM memes WHERE tags = '"+ tag + "' AND id BETWEEN"+x+"AND"+y;
+        var sql = "SELECT * FROM memes WHERE tags = '"+ tag + "'";
+
+        formData.append('sql', sql);
+
+
+          $.ajax({
+              type:'POST',
+              url:'../tags/getMeme.php',
+              processData: false,
+              contentType: false,
+              data:formData,
+              success: function(data){
+
+                  var parseIt = $.parseJSON(data);
+
+                  for(x=0;x<100;x++){
+
+                      document.getElementById('content').innerHTML += "<img width=\"300px\" src=\"" + parseIt[x].url + "\"alt=\"oops...\"> <br>";
+
+                  }
+
+              }
+          });
+    }
+    </script>
+
 
     <title>Home - Memeus Supremus</title>
 
@@ -124,36 +161,22 @@
     <center>
     <h2> Tags </h2>
       <div id="tags">
-        <button type="button" id="Sports" class="btn button" name="button">#Sports</button>
-        <button type="button" id="Political" class="btn button" name="button">#Political</button>
-        <button type="button" id="Wildlife" class="btn button" name="button">#Wildlife</button>
-        <button type="button" id="Spicy" class="btn button" name="button">#Spicy</button>
-        <button type="button" id="Dank" class="btn button" name="button">#Dank</button>
-        <button type="button" id="Superheros" class="btn button" name="button">#Superheros</button>
-        <button type="button" id="Holidays" class="btn button" name="button">#Holidays</button>
-        <button type="button" id="Seasonal" class="btn button" name="button">#Seasonal</button>
-        <button type="button" id="Videogames" class="btn button" name="button">#Videogames</button>
+        <button type="button" onclick="getMeme('Sports');" id="Sports" class="btn button" name="button">#Sports</button>
+        <button type="button" onclick="getMeme('Political');" id="Political" class="btn button" name="button">#Political</button>
+        <button type="button" onclick="getMeme('');" id="Wildlife" class="btn button" name="button">#Wildlife</button>
+        <button type="button" onclick="getMeme();" id="Spicy" class="btn button" name="button">#Spicy</button>
+        <button type="button" onclick="getMeme();" id="Dank" class="btn button" name="button">#Dank</button>
+        <button type="button" onclick="getMeme();" id="Superheros" class="btn button" name="button">#Superheros</button>
+        <button type="button" onclick="getMeme();" id="Holidays" class="btn button" name="button">#Holidays</button>
+        <button type="button" onclick="getMeme();" id="Seasonal" class="btn button" name="button">#Seasonal</button>
+        <button type="button" onclick="getMeme();" id="Videogames" class="btn button" name="button">#Videogames</button>
       </div>
     </center>
   </section>
 
   <!-- david's content div section -->
   <div class="" id="content">
-      <script>
-          $.ajax({
-              type:'POST',
-              url:'getMeme.php',
-              // data:formData,
-              success: function(data){
-                  var data1 = data.split(data, ",")
-                  for(x=0;x<100;x++){
 
-                      document.getElementById('content').innerHTML += "<img width=\"300px\" src=\"" + data1[x] + "\"alt=\"oops...\">";
-                  }
-
-              }
-          });
-      </script>
   </div>
 
 
@@ -201,5 +224,6 @@
 <script src="../js/core.js"></script>
 <script src="../js/lightbox-plus-jquery.min.js"></script>
 <script src="../js/lity.min.js"></script>
+
 </body>
 </html>
