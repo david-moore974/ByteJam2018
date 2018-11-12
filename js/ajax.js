@@ -19,7 +19,7 @@ function getMeme(tag){
 
               for(x=0;x<100;x++){
 
-                  document.getElementById('content').innerHTML = "<img width=\"300px\" src=\"" + parseIt[x].url + "\"alt=\"oops...\">";
+                  document.getElementById('content').innerHTML = "<img width=\"9000px\" src=\"" + parseIt[x].url + "\"alt=\"oops...\">";
 
               }
 
