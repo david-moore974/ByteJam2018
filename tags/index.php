@@ -161,12 +161,10 @@
         <button type="button" onclick="getMeme('Sports');" id="Sports" class="btn button" name="button">#Sports</button>
         <button type="button" onclick="getMeme('Political');" id="Political" class="btn button" name="button">#Political</button>
         <button type="button" onclick="getMeme('Wildlife');" id="Wildlife" class="btn button" name="button">#Wildlife</button>
-        <button type="button" onclick="getMeme('');" id="Spicy" class="btn button" name="button">#Spicy</button>
-        <button type="button" onclick="getMeme('');" id="Dank" class="btn button" name="button">#Dank</button>
         <button type="button" onclick="getMeme('Super Hero');" id="Superheros" class="btn button" name="button">#Superheros</button>
         <button type="button" onclick="getMeme('Holidays');" id="Holidays" class="btn button" name="button">#Holidays</button>
         <button type="button" onclick="getMeme('Seasonal');" id="Seasonal" class="btn button" name="button">#Seasonal</button>
-        <button type="button" onclick="getMeme('Videogames');" id="Videogames" class="btn button" name="button">#Videogames</button>
+        <button type="button" onclick="getMeme('Video Games');" id="Videogames" class="btn button" name="button">#Videogames</button>
       </div>
     </center>
   </section>
