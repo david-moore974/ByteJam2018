@@ -143,7 +143,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="../tags/tags.html">Tags</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="../tags/">Tags</a> </li>
             <li class="nav-item"> <a class="nav-link" href="../about/index.html">About Us</a> </li>
           </ul>
           <form class="ml-auto">
@@ -202,7 +202,7 @@
         <div class="col-lg-6 col-md-8">
           <ul class="bottom_ul">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../tags/tags.html">Tags</a></li>          
+            <li><a href="../tags/">Tags</a></li>
             <li><a href="../about/index.html">About Us</a></li>
           </ul>
         </div>
