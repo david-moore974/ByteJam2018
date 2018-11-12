@@ -32,3 +32,15 @@ h2
 .modal-content{
     border:none;
 }
+#content img{
+    margin-top: 15px;
+    border:solid;
+    border-width: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+#content{
+    background-color: lightgrey;
+
+}

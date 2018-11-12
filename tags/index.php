@@ -1,9 +1,6 @@
 <?php
     session_start();
 
-
-
-
  ?>
 
 
@@ -48,7 +45,7 @@
 
                   for(x=0;x<100;x++){
 
-                      document.getElementById('content').innerHTML += "<img width=\"300px\" src=\"" + parseIt[x].url + "\"alt=\"oops...\"> <br>";
+                      document.getElementById('content').innerHTML += "<img width=\"500px\" src=\"" + parseIt[x].url + "\"alt=\"oops...\"> <br>";
 
                   }
 
@@ -166,7 +163,7 @@
         <button type="button" onclick="getMeme('Wildlife');" id="Wildlife" class="btn button" name="button">#Wildlife</button>
         <button type="button" onclick="getMeme('');" id="Spicy" class="btn button" name="button">#Spicy</button>
         <button type="button" onclick="getMeme('');" id="Dank" class="btn button" name="button">#Dank</button>
-        <button type="button" onclick="getMeme('');" id="Superheros" class="btn button" name="button">#Superheros</button>
+        <button type="button" onclick="getMeme('Super Hero');" id="Superheros" class="btn button" name="button">#Superheros</button>
         <button type="button" onclick="getMeme('Holidays');" id="Holidays" class="btn button" name="button">#Holidays</button>
         <button type="button" onclick="getMeme('Seasonal');" id="Seasonal" class="btn button" name="button">#Seasonal</button>
         <button type="button" onclick="getMeme('Videogames');" id="Videogames" class="btn button" name="button">#Videogames</button>
@@ -175,9 +172,11 @@
   </section>
 
   <!-- david's content div section -->
+  <center>
   <div class="" id="content">
 
   </div>
+</center>
 
 
 
