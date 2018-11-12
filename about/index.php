@@ -72,7 +72,6 @@
             <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#">Tags</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Upload</a> </li>
           </ul>
           <form class="ml-auto">
           </form>
@@ -134,7 +133,6 @@
           <ul class="bottom_ul">
             <li><a href="#">Home</a></li>
             <li><a href="#">Tags</a></li>
-            <li><a href="#">Upload</a></li>
             <li><a href="#">About</a></li>
           </ul>
         </div>
