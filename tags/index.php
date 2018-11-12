@@ -164,7 +164,7 @@
         <button type="button" onclick="getMeme('Super Hero');" id="Superheros" class="btn button" name="button">#Superheros</button>
         <button type="button" onclick="getMeme('Holidays');" id="Holidays" class="btn button" name="button">#Holidays</button>
         <button type="button" onclick="getMeme('Seasonal');" id="Seasonal" class="btn button" name="button">#Seasonal</button>
-        <button type="button" onclick="getMeme('Videogames');" id="Videogames" class="btn button" name="button">#Videogames</button>
+        <button type="button" onclick="getMeme('Video Games');" id="Videogames" class="btn button" name="button">#Videogames</button>
       </div>
     </center>
   </section>
