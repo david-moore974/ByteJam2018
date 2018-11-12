@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"
-    <meta name="viewport" content="width=device-width, initial-scale=1"
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -13,17 +11,18 @@
     <meta name="author" content="" />
     <link rel="icon" href="" />
 
-    <title>Home - Memeus Supremus</title>
+    <title>About us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
     <link href="../css/new-style.css" rel="stylesheet" />
-    <link rel="../stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type ="txt/css" href="../css/font-awesome.min.css" />
     <link href="../css/lightbox.min.css" rel="stylesheet" />
     <link href="../css/lity.min.css" rel="stylesheet" />
     <link href="../css/template.css" rel="stylesheet"/>
+    <link href="../css/motal.css" rel="stylesheet"/>
   </head>
   <body>
   <!-- Top small banner -->
@@ -54,7 +53,35 @@
           </div>
           <div class="col-md-6 col-lg-5 admin-bar ml-auto mt-2">
             <nav class="nav justify-content-end">
-            <button class="btn btn-info" type="button" name="button">login</button>
+
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id = "modalContent">
+                  <div class="modal-header" id = "modalHeader">
+                      <h4 id = "loginH4" class="modal-title">Login</h4>
+                    <button id="closeBtn" type="button" class="close" data-dismiss="modal">&times;</button>
+
+                  </div>
+                  <div class="modal-body" id = "modalBody">
+                    <p id = "userNameWord"> Username:</p>
+                    <input type="text" class="form-control" id="usr"> <br>
+                    <p id = "passWordP">Password:</p>
+                    <input type="password" class="form-control" id="pwd">
+
+                  </div>
+                  <div class="modal-footer" id = "modalFooter">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
             </nav>
           </div>
         </div>
@@ -84,31 +111,39 @@
   </section>
 
   <!-- content -->
-  <div class="container">
+
+
+  <div class="container-fluid">
     <div class="row">
-      <h2>About Us</h2>
-      <div class = "col-sm"
+      <div class="col-lg-4">
         <div class="card" style="width:400px">
           <img class="card-img-top" src="https://scontent.fdsm1-1.fna.fbcdn.net/v/t1.0-9/16298762_1012934038840530_3360968111574331366_n.jpg?_nc_cat=107&_nc_ht=scontent.fdsm1-1.fna&oh=8fbf1eecd3b77f2da52d296d1036abdf&oe=5C7A4928" alt="Card image" style="width:100%">
           <div class="card-body">
             <h4 class="card-title">David Moore</h4>
-
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="https://scontent.fdsm1-1.fna.fbcdn.net/v/t1.0-9/16298762_1012934038840530_3360968111574331366_n.jpg?_nc_cat=107&_nc_ht=scontent.fdsm1-1.fna&oh=8fbf1eecd3b77f2da52d296d1036abdf&oe=5C7A4928" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">David Moore</h4>
           <a href="#" class="btn btn-primary">See Profile</a>
         </div>
       </div>
-    </div>
-    <div class="col-sm">
-    <div class="card" style="width:400px">
-      <img class="card-img-top" src="https://scontent.fdsm1-1.fna.fbcdn.net/v/t1.0-9/16298762_1012934038840530_3360968111574331366_n.jpg?_nc_cat=107&_nc_ht=scontent.fdsm1-1.fna&oh=8fbf1eecd3b77f2da52d296d1036abdf&oe=5C7A4928" alt="Card image" style="width:100%">
-        <div class="card-body">
-          <h4 class="card-title">David Moore</h4>
-          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="https://scontent.fdsm1-1.fna.fbcdn.net/v/t1.0-9/16298762_1012934038840530_3360968111574331366_n.jpg?_nc_cat=107&_nc_ht=scontent.fdsm1-1.fna&oh=8fbf1eecd3b77f2da52d296d1036abdf&oe=5C7A4928" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">David Moore</h4>
           <a href="#" class="btn btn-primary">See Profile</a>
         </div>
+      </div>
       </div>
     </div>
   </div>
-
 
   <!-- Footer Section -->
   <footer>
@@ -116,9 +151,9 @@
       <div class="row px-3">
         <div class="col-lg-4 col-md-12">
           <h6 class="heading-footer">ABOUT</h6>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-          <p><i class="fa fa-phone"></i> <span>Call Us :</span> +91 9999 878 398</p>
-          <p><i class="fa fa-envelope"></i> <span>Send Email :</span> info@webenlance.com</p>
+          <p>We are a non-profit business that collects and provides memes as a service. Please feel free to donate.</p>
+          <p><i class="fa fa-phone"></i> <span>Call Us :</span>  641-203-0474</p>
+          <p><i class="fa fa-envelope"></i> <span>Send Email :</span> david_moore@stu.indianhills.edu</p>
         </div>
         </div>
       </div>
@@ -130,7 +165,7 @@
     <div class="container-fluid">
       <div class="row px-3">
         <div class="col-lg-6 col-md-4">
-          <p>© 2018 - <a href="http://grafreez.com">Grafreez.com</a></p>
+          <p>© 2018 - GM Memes</p>
         </div>
         <div class="col-lg-6 col-md-8">
           <ul class="bottom_ul">

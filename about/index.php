@@ -87,9 +87,9 @@
       <div class="row px-3">
         <div class="col-lg-4 col-md-12">
           <h6 class="heading-footer">ABOUT US</h6>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-          <p><i class="fa fa-phone"></i> <span>Call Us :</span> +91 9999 878 398</p>
-          <p><i class="fa fa-envelope"></i> <span>Send Email :</span> info@webenlance.com</p>
+          <p>We are a non-profit business that collects and provides memes as a service. Please feel free to donate.</p>
+          <p><i class="fa fa-phone"></i> <span>Call Us :</span>  641-203-0474</p>
+          <p><i class="fa fa-envelope"></i> <span>Send Email :</span> david_moore@stu.indianhills.edu</p>
         </div>
         <div class="col-lg-2 col-md-4">
           <h6 class="heading-footer">QUICK LINKS</h6>
